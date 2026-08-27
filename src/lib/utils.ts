@@ -11,6 +11,7 @@ const twMerge = extendTailwindMerge({
             "watermark-md",
             "h1",
             "h1-sm",
+            "hero-sm",
             "h2",
             "h2-sm",
             "h3",

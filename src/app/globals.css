@@ -24,6 +24,10 @@
   --text-h1-sm--line-height: 3.25rem;
   --text-h1-sm--letter-spacing: -0.025em;
 
+  --text-hero-sm: 3rem;
+  --text-hero-sm--line-height: 3rem;
+  --text-hero-sm--letter-spacing: -0.025em;
+
   --text-h2: 4.5rem;
   --text-h2--line-height: 4rem;
   --text-h2--letter-spacing: -0.027778em;
@@ -49,6 +53,15 @@
   --text-error--letter-spacing: -0.015625em;
 
   --tracking-rail: 1em;
+
+  --animate-rise: v-rise 900ms cubic-bezier(0.16, 1, 0.3, 1)
+    var(--rise-delay, 0ms) both;
+
+  @keyframes v-rise {
+    from {
+      transform: translateY(110%);
+    }
+  }
 }
 
 @theme inline {
@@ -78,6 +91,11 @@
   @variant md {
     width: min(100% - 12rem, 1110px);
   }
+}
+
+@utility v-clip {
+  overflow: clip;
+  overflow-clip-margin: 0.5rem;
 }
 
 @utility v-btn {
