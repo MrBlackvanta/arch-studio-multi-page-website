@@ -1,6 +1,56 @@
 @import "tailwindcss";
 @source not "../../*.md";
 
+@theme {
+  --color-very-dark-blue: #1b1d23;
+  --color-dark-grey: #60636d;
+  --color-medium-grey: #686d79;
+  --color-light-grey: #c8ccd8;
+  --color-very-light-grey: #eeeff4;
+  --color-red: #df5656;
+  --color-red-ink: #da3a3a;
+
+  --text-watermark: 15.625rem;
+  --text-watermark--line-height: 12.5rem;
+  --text-watermark--letter-spacing: -0.02em;
+  --text-watermark-md: 7.5rem;
+  --text-watermark-md--line-height: 12.5rem;
+  --text-watermark-md--letter-spacing: -0.025em;
+
+  --text-h1: 6rem;
+  --text-h1--line-height: 5rem;
+  --text-h1--letter-spacing: -0.020833em;
+  --text-h1-sm: 3rem;
+  --text-h1-sm--line-height: 3.25rem;
+  --text-h1-sm--letter-spacing: -0.025em;
+
+  --text-h2: 4.5rem;
+  --text-h2--line-height: 4rem;
+  --text-h2--letter-spacing: -0.027778em;
+  --text-h2-sm: 3rem;
+  --text-h2-sm--line-height: 3.25rem;
+  --text-h2-sm--letter-spacing: -0.035714em;
+
+  --text-h3: 2rem;
+  --text-h3--line-height: 2.5rem;
+
+  --text-field: 1.25rem;
+  --text-field--line-height: 1;
+  --text-field--letter-spacing: -0.015625em;
+
+  --text-body: 1.125rem;
+  --text-body--line-height: 1.5rem;
+
+  --text-label: 1.125rem;
+  --text-label--line-height: 1.5625rem;
+
+  --text-error: 1.125rem;
+  --text-error--line-height: 1;
+  --text-error--letter-spacing: -0.015625em;
+
+  --tracking-rail: 1em;
+}
+
 @theme inline {
   --font-sans: var(--font-league-spartan);
 }
@@ -8,6 +58,9 @@
 @layer base {
   html {
     overflow-y: scroll;
+  }
+  body {
+    @apply bg-white font-sans text-body font-medium text-dark-grey;
   }
   button:not(:disabled) {
     cursor: pointer;
