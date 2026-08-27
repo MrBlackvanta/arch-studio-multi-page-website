@@ -65,4 +65,45 @@
   button:not(:disabled) {
     cursor: pointer;
   }
+  :focus-visible {
+    outline: 2px solid var(--color-very-dark-blue);
+    outline-offset: 3px;
+  }
+}
+
+@utility v-container {
+  margin-inline: auto;
+  width: min(100% - 4rem, 1110px);
+
+  @variant md {
+    width: min(100% - 12rem, 1110px);
+  }
+}
+
+@utility v-btn {
+  @apply inline-flex items-center bg-very-dark-blue text-label font-bold text-white transition-[background-color,color] duration-200;
+
+  @media (hover: hover) {
+    &:hover {
+      @apply bg-dark-grey;
+    }
+  }
+
+  &:active {
+    @apply bg-light-grey text-very-dark-blue;
+  }
+}
+
+@utility v-nav-link {
+  @apply text-medium-grey transition-[color] duration-200;
+
+  @media (hover: hover) {
+    &:hover {
+      @apply text-very-dark-blue;
+    }
+  }
+
+  &[aria-current="page"] {
+    @apply text-very-dark-blue;
+  }
 }

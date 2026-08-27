@@ -1,7 +1,10 @@
-import { siteUrl } from "@/data";
-import { pageMetadata } from "@/lib/metadata";
 import type { Metadata, Viewport } from "next";
 import { League_Spartan } from "next/font/google";
+
+import { SiteFooter, SiteHeader } from "@/components/layout";
+import { siteUrl } from "@/data";
+import { pageMetadata } from "@/lib/metadata";
+
 import "./globals.css";
 
 const leagueSpartan = League_Spartan({
@@ -39,7 +42,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${leagueSpartan.variable} antialiased`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <SiteHeader />
+        <main className="relative">{children}</main>
+        <SiteFooter />
+      </body>
     </html>
   );
 }
