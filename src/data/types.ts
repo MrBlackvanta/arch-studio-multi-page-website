@@ -7,6 +7,17 @@ export type ResponsiveImage = {
   desktop: StaticImageData;
 };
 
+export type Photo = {
+  image: StaticImageData;
+  alt: string;
+};
+
+export type WelcomeCopy = {
+  lines: [string, string];
+  paragraphs: string[];
+  photo: Photo;
+};
+
 export type HeroSlide = {
   slug: string;
   lines: [string, string];

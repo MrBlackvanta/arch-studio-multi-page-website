@@ -1,11 +1,12 @@
 import { PageRail } from "@/components/layout";
-import { Hero } from "@/views/home";
+import { Hero, Welcome } from "@/views/home";
 
 export default function HomePage() {
   return (
     <>
       <PageRail label="Home" />
       <Hero />
+      <Welcome />
     </>
   );
 }
