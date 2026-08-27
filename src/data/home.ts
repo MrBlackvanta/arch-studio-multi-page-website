@@ -2,17 +2,20 @@ import heroFederalDesktop from "@/assets/home/desktop/image-hero-federal.webp";
 import heroParamourDesktop from "@/assets/home/desktop/image-hero-paramour.webp";
 import heroSeraphDesktop from "@/assets/home/desktop/image-hero-seraph.webp";
 import heroTrinityDesktop from "@/assets/home/desktop/image-hero-trinity.webp";
+import smallTeamDesktop from "@/assets/home/desktop/image-small-team.webp";
 import welcomePhoto from "@/assets/home/desktop/image-welcome.webp";
 import heroFederalMobile from "@/assets/home/mobile/image-hero-federal.webp";
 import heroParamourMobile from "@/assets/home/mobile/image-hero-paramour.webp";
 import heroSeraphMobile from "@/assets/home/mobile/image-hero-seraph.webp";
 import heroTrinityMobile from "@/assets/home/mobile/image-hero-trinity.webp";
+import smallTeamMobile from "@/assets/home/mobile/image-small-team.webp";
 import heroFederalTablet from "@/assets/home/tablet/image-hero-federal.webp";
 import heroParamourTablet from "@/assets/home/tablet/image-hero-paramour.webp";
 import heroSeraphTablet from "@/assets/home/tablet/image-hero-seraph.webp";
 import heroTrinityTablet from "@/assets/home/tablet/image-hero-trinity.webp";
+import smallTeamTablet from "@/assets/home/tablet/image-small-team.webp";
 
-import type { HeroSlide, WelcomeCopy } from "./types";
+import type { HeroSlide, SmallTeamCopy, WelcomeCopy } from "./types";
 
 export const heroSlides: HeroSlide[] = [
   {
@@ -75,5 +78,18 @@ export const welcome: WelcomeCopy = {
   photo: {
     image: welcomePhoto,
     alt: "Two curved, steel-panelled walls of a building meeting at a knife-sharp edge under a pale sky.",
+  },
+};
+
+export const smallTeam: SmallTeamCopy = {
+  lines: ["Small team,", "big ideas"],
+  cta: { label: "About Us", href: "/about" },
+  photo: {
+    image: {
+      mobile: smallTeamMobile,
+      tablet: smallTeamTablet,
+      desktop: smallTeamDesktop,
+    },
+    alt: "White cubic museum pavilions standing in still, shallow water, a perforated steel dome rising behind them.",
   },
 };

@@ -51,12 +51,9 @@
 
   --tracking-rail: 1em;
 
-  --animate-rise: v-rise 900ms cubic-bezier(0.16, 1, 0.3, 1)
-    var(--rise-delay, 0ms) both;
-
   @keyframes v-rise {
     from {
-      transform: translateY(var(--rise-shift, 125%));
+      transform: translateY(var(--rise-shift, 125%)) scale(var(--rise-scale, 1));
     }
   }
 }
@@ -95,6 +92,11 @@
   overflow-clip-margin: 0.5rem;
 }
 
+@utility v-enter {
+  animation: v-rise 900ms cubic-bezier(0.16, 1, 0.3, 1) var(--rise-delay, 0ms)
+    both;
+}
+
 @utility v-reveal {
   @media (prefers-reduced-motion: no-preference) {
     @supports (animation-timeline: view()) {
@@ -109,6 +111,7 @@
 
 @utility v-btn {
   @apply inline-flex items-center bg-very-dark-blue text-label font-bold text-white transition-[background-color,color] duration-200;
+  @apply focus-visible:-outline-offset-4 focus-visible:outline-current;
 
   @media (hover: hover) {
     &:hover {

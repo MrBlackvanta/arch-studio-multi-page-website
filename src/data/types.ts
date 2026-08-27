@@ -12,10 +12,21 @@ export type Photo = {
   alt: string;
 };
 
+export type ResponsivePhoto = {
+  image: ResponsiveImage;
+  alt: string;
+};
+
 export type WelcomeCopy = {
   lines: [string, string];
   paragraphs: string[];
   photo: Photo;
+};
+
+export type SmallTeamCopy = {
+  lines: [string, string];
+  cta: NavLink;
+  photo: ResponsivePhoto;
 };
 
 export type HeroSlide = {

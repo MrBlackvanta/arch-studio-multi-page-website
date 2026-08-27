@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 import HeroPager from "./hero-pager";
 
-const rise = "motion-safe:animate-rise";
+const rise = "motion-safe:v-enter";
 
 export default function Hero() {
   const [{ current, moves }, setSlide] = useState({ current: 0, moves: 0 });

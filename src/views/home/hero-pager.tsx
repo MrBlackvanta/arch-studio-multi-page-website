@@ -21,7 +21,7 @@ export default function HeroPager({
           aria-current={index === current ? "true" : undefined}
           onClick={() => onSelect(index)}
           className={cn(
-            "grid size-20 place-items-center text-label font-bold transition-[background-color,color] duration-200",
+            "grid size-20 place-items-center text-label font-bold transition-[background-color,color] duration-200 focus-visible:-outline-offset-4 focus-visible:outline-current",
             index === current
               ? "bg-very-dark-blue text-white"
               : "bg-white text-medium-grey hover:bg-very-light-grey",
