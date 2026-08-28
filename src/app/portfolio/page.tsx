@@ -8,7 +8,7 @@ export const metadata: Metadata = pageMetadata({
   title: "Portfolio",
   shareTitle: "Arch Studio | Portfolio",
   description:
-    "Twelve years of Arch Studio projects, from Seraph Station to Project Del Sol — stations, towers, museums and homes.",
+    "Twelve years of Arch Studio projects, from Seraph Station to Project Del Sol: stations, towers, museums and homes.",
   path: "/portfolio",
 });
 

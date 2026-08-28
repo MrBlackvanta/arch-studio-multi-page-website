@@ -8,7 +8,7 @@ export const metadata: Metadata = pageMetadata({
   title: "Contact",
   shareTitle: "Arch Studio | Contact",
   description:
-    "Tell us about your project. Arch Studio has offices in Tennessee and Texas — leave a message or give us a call.",
+    "Tell us about your project. Arch Studio has offices in Tennessee and Texas, so leave a message or give us a call.",
   path: "/contact",
 });
 
