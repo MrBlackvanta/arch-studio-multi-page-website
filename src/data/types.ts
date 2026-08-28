@@ -42,6 +42,12 @@ export type FeaturedCopy = {
   projects: FeaturedProject[];
 };
 
+export type AboutHeroCopy = {
+  heading: string;
+  body: string;
+  photo: ResponsivePhoto;
+};
+
 export type HeroSlide = {
   slug: string;
   lines: [string, string];
