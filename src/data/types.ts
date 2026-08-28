@@ -48,6 +48,12 @@ export type AboutHeroCopy = {
   photo: ResponsivePhoto;
 };
 
+export type AboutHeritageCopy = {
+  lines: [string, string];
+  paragraphs: string[];
+  photo: Photo;
+};
+
 export type HeroSlide = {
   slug: string;
   lines: [string, string];

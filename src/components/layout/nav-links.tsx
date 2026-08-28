@@ -44,13 +44,14 @@ type NavLinksProps = {
 
 export default function NavLinks({ variant, onNavigate }: NavLinksProps) {
   const pathname = usePathname();
+  const route = pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
   const { landmark, nav, list, link, underline } = variants[variant];
 
   return (
     <nav aria-label={landmark} className={nav}>
       <ul className={list}>
         {navLinks.map(({ label, href }) => {
-          const current = pathname === href;
+          const current = route === href;
 
           return (
             <li key={href}>

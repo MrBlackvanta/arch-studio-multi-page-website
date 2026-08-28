@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { PageRail } from "@/components/layout";
 import { pageMetadata } from "@/lib/metadata";
-import { Hero } from "@/views/about";
+import { Heritage, Hero } from "@/views/about";
 
 export const metadata: Metadata = pageMetadata({
   title: "About Us",
@@ -17,6 +17,7 @@ export default function AboutPage() {
     <>
       <PageRail label="About Us" />
       <Hero />
+      <Heritage />
     </>
   );
 }
