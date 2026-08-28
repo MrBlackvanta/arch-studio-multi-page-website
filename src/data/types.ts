@@ -17,6 +17,12 @@ export type ResponsivePhoto = {
   alt: string;
 };
 
+export type PageHeroCopy = {
+  heading: string;
+  body: string;
+  photo: ResponsivePhoto;
+};
+
 export type WelcomeCopy = {
   lines: [string, string];
   paragraphs: string[];
@@ -44,12 +50,6 @@ export type FeaturedCopy = {
   projects: Project[];
 };
 
-export type AboutHeroCopy = {
-  heading: string;
-  body: string;
-  photo: ResponsivePhoto;
-};
-
 export type AboutHeritageCopy = {
   lines: [string, string];
   paragraphs: string[];
@@ -65,6 +65,23 @@ export type Leader = {
 export type AboutLeadersCopy = {
   lines: [string, string];
   people: Leader[];
+};
+
+export type OfficeRow = {
+  label: string;
+  value: string;
+  href?: string;
+};
+
+export type Office = {
+  name: string;
+  rows: OfficeRow[];
+};
+
+export type ContactDetailsCopy = {
+  lines: [string, string];
+  mapLabel: string;
+  offices: [Office, Office];
 };
 
 export type HeroSlide = {

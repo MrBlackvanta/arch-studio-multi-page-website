@@ -10,12 +10,12 @@ import { LinkedInIcon, TwitterIcon } from "@/components/icons";
 
 import type {
   AboutHeritageCopy,
-  AboutHeroCopy,
   AboutLeadersCopy,
+  PageHeroCopy,
   SocialLink,
 } from "./types";
 
-export const aboutHero: AboutHeroCopy = {
+export const aboutHero: PageHeroCopy = {
   heading: "Your team of professionals",
   body: "Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.",
   photo: {

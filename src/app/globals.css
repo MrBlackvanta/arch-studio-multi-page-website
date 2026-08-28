@@ -68,6 +68,10 @@
 @layer base {
   html {
     overflow-y: scroll;
+
+    @media (prefers-reduced-motion: no-preference) {
+      scroll-behavior: smooth;
+    }
   }
   body {
     @apply bg-white font-sans text-body font-medium text-dark-grey;
