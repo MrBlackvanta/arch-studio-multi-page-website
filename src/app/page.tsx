@@ -1,5 +1,5 @@
 import { PageRail } from "@/components/layout";
-import { Hero, SmallTeam, Welcome } from "@/views/home";
+import { Featured, Hero, SmallTeam, Welcome } from "@/views/home";
 
 export default function HomePage() {
   return (
@@ -8,6 +8,7 @@ export default function HomePage() {
       <Hero />
       <Welcome />
       <SmallTeam />
+      <Featured />
     </>
   );
 }

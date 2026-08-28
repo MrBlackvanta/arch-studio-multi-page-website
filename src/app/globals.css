@@ -14,6 +14,9 @@
   --text-watermark--line-height: 12.5rem;
   --text-watermark--letter-spacing: -0.02em;
 
+  --text-numeral: 15.625rem;
+  --text-numeral--line-height: 12.5rem;
+
   --text-h1: 6rem;
   --text-h1--line-height: 5rem;
   --text-h1--letter-spacing: -0.020833em;
@@ -104,7 +107,8 @@
       animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
       animation-fill-mode: both;
       animation-timeline: view();
-      animation-range: entry 0px entry var(--reveal-span, 18rem);
+      animation-range: entry var(--reveal-start, 0px) entry
+        calc(var(--reveal-start, 0px) + var(--reveal-span, 18rem));
     }
   }
 }

@@ -29,6 +29,19 @@ export type SmallTeamCopy = {
   photo: ResponsivePhoto;
 };
 
+export type FeaturedProject = {
+  slug: string;
+  name: string;
+  photo: ResponsivePhoto;
+};
+
+export type FeaturedCopy = {
+  heading: string;
+  cta: NavLink;
+  cardLabel: string;
+  projects: FeaturedProject[];
+};
+
 export type HeroSlide = {
   slug: string;
   lines: [string, string];
