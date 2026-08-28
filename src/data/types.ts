@@ -54,6 +54,17 @@ export type AboutHeritageCopy = {
   photo: Photo;
 };
 
+export type Leader = {
+  name: string;
+  role: string;
+  avatar: StaticImageData;
+};
+
+export type AboutLeadersCopy = {
+  lines: [string, string];
+  people: Leader[];
+};
+
 export type HeroSlide = {
   slug: string;
   lines: [string, string];
