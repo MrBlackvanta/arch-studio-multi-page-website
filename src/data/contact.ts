@@ -7,6 +7,7 @@ import mapTablet from "@/assets/contact/tablet/image-map.webp";
 
 import type {
   ContactDetailsCopy,
+  ContactFormCopy,
   PageHeroCopy,
   ResponsivePhoto,
 } from "./types";
@@ -54,4 +55,17 @@ export const contactDetails: ContactDetailsCopy = {
 export const contactMap: ResponsivePhoto = {
   image: { mobile: mapMobile, tablet: mapTablet, desktop: mapDesktop },
   alt: "Map of the southern United States with a pin on each Arch Studio office, one east of Knoxville in Tennessee and one near Fort Worth in Texas.",
+};
+
+export const contactForm: ContactFormCopy = {
+  lines: ["Connect", "with us"],
+  fields: [
+    { name: "name", label: "Name", autoComplete: "name" },
+    { name: "email", label: "Email", type: "email", autoComplete: "email" },
+    { name: "message", label: "Message", multiline: true },
+  ],
+  submitLabel: "Send message",
+  emptyError: "Can’t be empty",
+  emailError: "Invalid email",
+  success: "Thanks! We’ll be in touch soon.",
 };

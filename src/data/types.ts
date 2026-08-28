@@ -84,6 +84,25 @@ export type ContactDetailsCopy = {
   offices: [Office, Office];
 };
 
+export type ContactFieldName = "name" | "email" | "message";
+
+export type ContactField = {
+  name: ContactFieldName;
+  label: string;
+  type?: "email";
+  autoComplete?: string;
+  multiline?: boolean;
+};
+
+export type ContactFormCopy = {
+  lines: [string, string];
+  fields: ContactField[];
+  submitLabel: string;
+  emptyError: string;
+  emailError: string;
+  success: string;
+};
+
 export type HeroSlide = {
   slug: string;
   lines: [string, string];

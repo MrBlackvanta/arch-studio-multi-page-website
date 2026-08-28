@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { PageRail } from "@/components/layout";
 import { pageMetadata } from "@/lib/metadata";
-import { Details, Hero, Map } from "@/views/contact";
+import { Details, Form, Hero, Map } from "@/views/contact";
 
 export const metadata: Metadata = pageMetadata({
   title: "Contact",
@@ -19,6 +19,7 @@ export default function ContactPage() {
       <Hero />
       <Details />
       <Map />
+      <Form />
     </>
   );
 }
