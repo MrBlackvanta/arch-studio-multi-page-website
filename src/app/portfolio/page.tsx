@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { PageRail } from "@/components/layout";
 import { pageMetadata } from "@/lib/metadata";
+import { ProjectGrid } from "@/views/portfolio";
 
 export const metadata: Metadata = pageMetadata({
   title: "Portfolio",
@@ -15,9 +16,7 @@ export default function PortfolioPage() {
   return (
     <>
       <PageRail label="Portfolio" />
-      <h1 className="v-container text-h2-sm font-bold text-very-dark-blue lg:text-h2">
-        Portfolio
-      </h1>
+      <ProjectGrid />
     </>
   );
 }

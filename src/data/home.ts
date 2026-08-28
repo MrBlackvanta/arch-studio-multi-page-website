@@ -14,16 +14,8 @@ import heroParamourTablet from "@/assets/home/tablet/image-hero-paramour.webp";
 import heroSeraphTablet from "@/assets/home/tablet/image-hero-seraph.webp";
 import heroTrinityTablet from "@/assets/home/tablet/image-hero-trinity.webp";
 import smallTeamTablet from "@/assets/home/tablet/image-small-team.webp";
-import featured228bDesktop from "@/assets/portfolio/desktop/image-228b.webp";
-import featuredDelSolDesktop from "@/assets/portfolio/desktop/image-del-sol.webp";
-import featuredPrototypeDesktop from "@/assets/portfolio/desktop/image-prototype.webp";
-import featured228bMobile from "@/assets/portfolio/mobile/image-228b.webp";
-import featuredDelSolMobile from "@/assets/portfolio/mobile/image-del-sol.webp";
-import featuredPrototypeMobile from "@/assets/portfolio/mobile/image-prototype.webp";
-import featured228bTablet from "@/assets/portfolio/tablet/image-228b.webp";
-import featuredDelSolTablet from "@/assets/portfolio/tablet/image-del-sol.webp";
-import featuredPrototypeTablet from "@/assets/portfolio/tablet/image-prototype.webp";
 
+import { featuredProjects } from "./projects";
 import type {
   FeaturedCopy,
   HeroSlide,
@@ -112,42 +104,5 @@ export const featured: FeaturedCopy = {
   heading: "Featured",
   cta: { label: "See All", href: "/portfolio" },
   cardLabel: "View All Projects",
-  projects: [
-    {
-      slug: "del-sol",
-      name: "Project Del Sol",
-      photo: {
-        image: {
-          mobile: featuredDelSolMobile,
-          tablet: featuredDelSolTablet,
-          desktop: featuredDelSolDesktop,
-        },
-        alt: "A pale tiled walkway beside a turquoise reflecting pool, with a domed hall and a slender white mast beyond.",
-      },
-    },
-    {
-      slug: "228b",
-      name: "228B Tower",
-      photo: {
-        image: {
-          mobile: featured228bMobile,
-          tablet: featured228bTablet,
-          desktop: featured228bDesktop,
-        },
-        alt: "A polished steel arch soaring into a cloudless sky, sunlight catching its curved inner edge.",
-      },
-    },
-    {
-      slug: "prototype",
-      name: "Le Prototype",
-      photo: {
-        image: {
-          mobile: featuredPrototypeMobile,
-          tablet: featuredPrototypeTablet,
-          desktop: featuredPrototypeDesktop,
-        },
-        alt: "Stacked white terraces and a slim glass balustrade set against a bright turquoise sky.",
-      },
-    },
-  ],
+  projects: featuredProjects,
 };

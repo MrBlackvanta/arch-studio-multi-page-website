@@ -29,9 +29,11 @@ export type SmallTeamCopy = {
   photo: ResponsivePhoto;
 };
 
-export type FeaturedProject = {
+export type Project = {
   slug: string;
   name: string;
+  date: string;
+  dateTime: string;
   photo: ResponsivePhoto;
 };
 
@@ -39,7 +41,7 @@ export type FeaturedCopy = {
   heading: string;
   cta: NavLink;
   cardLabel: string;
-  projects: FeaturedProject[];
+  projects: Project[];
 };
 
 export type AboutHeroCopy = {

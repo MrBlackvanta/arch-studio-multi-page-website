@@ -1,6 +1,5 @@
-import Link from "next/link";
-
 import Button from "@/components/button";
+import ProjectCard from "@/components/project-card";
 import { featured } from "@/data";
 
 const cascade = [
@@ -32,48 +31,20 @@ export default function Featured() {
         <ul className="mt-10.75 grid gap-6 md:mt-21.25 lg:mt-16 lg:grid-cols-3 lg:gap-7.5">
           {projects.map(({ slug, name, photo }, index) => (
             <li key={slug} className={cascade[index]}>
-              <Link
+              <ProjectCard
                 href={cta.href}
-                className="relative block h-60 overflow-clip lg:h-140"
+                photo={photo}
+                name={name}
+                meta={cardLabel}
+                heading="h3"
               >
-                <picture>
-                  <source
-                    media="(min-width: 64rem)"
-                    srcSet={photo.image.desktop.src}
-                  />
-                  <source
-                    media="(min-width: 48rem)"
-                    srcSet={photo.image.tablet.src}
-                  />
-                  <img
-                    src={photo.image.mobile.src}
-                    width={photo.image.mobile.width}
-                    height={photo.image.mobile.height}
-                    alt={photo.alt}
-                    loading="lazy"
-                    className="absolute inset-0 size-full object-cover v-reveal [--rise-scale:1.06] [--rise-shift:0]"
-                  />
-                </picture>
-
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-x-0 bottom-0 h-full bg-linear-to-b/srgb from-black/0 to-black/75 lg:h-1/2"
-                />
-
                 <span
                   aria-hidden="true"
                   className="absolute hidden text-numeral font-bold text-white/50 md:top-7.25 md:right-4 md:block lg:top-11.25 lg:-right-4"
                 >
                   {index + 1}
                 </span>
-
-                <div className="absolute bottom-6 left-6 v-clip md:bottom-10 md:left-10">
-                  <div className="v-reveal [--reveal-span:8rem]">
-                    <h3 className="text-h3 font-bold text-white">{name}</h3>
-                    <span className="block text-white">{cardLabel}</span>
-                  </div>
-                </div>
-              </Link>
+              </ProjectCard>
             </li>
           ))}
         </ul>
