@@ -34,6 +34,7 @@ export default function Hero() {
                 height={image.mobile.height}
                 alt={alt}
                 fetchPriority={index === 0 ? "high" : "low"}
+                loading={index === 0 ? "eager" : "lazy"}
                 className={cn(
                   "absolute inset-0 size-full object-cover transition-opacity duration-700 ease-out motion-reduce:transition-none",
                   index === current ? "opacity-100" : "opacity-0",
