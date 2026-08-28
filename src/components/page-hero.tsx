@@ -50,10 +50,9 @@ export default function PageHero({
 
         <span
           aria-hidden="true"
-          className="absolute right-0 hidden pr-[0.02em] text-watermark font-bold text-very-light-grey md:top-51 md:block lg:top-32.5"
-        >
-          {watermark}
-        </span>
+          data-label={watermark}
+          className="absolute right-0 hidden pr-[0.02em] text-watermark font-bold text-very-light-grey before:content-[attr(data-label)] md:top-51 md:block lg:top-32.5"
+        />
       </div>
     </section>
   );
