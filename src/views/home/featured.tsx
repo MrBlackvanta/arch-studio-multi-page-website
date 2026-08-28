@@ -12,7 +12,7 @@ export default function Featured() {
   const { heading, cta, cardLabel, projects } = featured;
 
   return (
-    <section className="pt-18.25 md:pt-50">
+    <section className="pt-18.25 pb-18 md:pt-50 md:pb-50">
       <div className="v-container">
         <div className="flex items-end justify-between">
           <h2 className="text-h2-sm font-bold text-very-dark-blue md:text-h2">

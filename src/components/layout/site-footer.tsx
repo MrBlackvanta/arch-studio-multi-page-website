@@ -27,8 +27,8 @@ export default function SiteFooter() {
             See Our Portfolio
           </Button>
         </div>
+        <Attribution />
       </div>
-      <Attribution />
     </footer>
   );
 }

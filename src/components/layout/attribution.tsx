@@ -1,6 +1,6 @@
 export default function Attribution() {
   return (
-    <p className="px-8 pt-4 pb-0.5 text-center text-sm text-dark-grey">
+    <p className="absolute inset-x-0 bottom-0.5 px-8 text-center text-sm text-dark-grey">
       Coded by{" "}
       <a
         href="https://www.linkedin.com/in/abdelrhman-vanta/"
