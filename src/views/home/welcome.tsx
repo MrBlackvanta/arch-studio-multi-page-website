@@ -10,7 +10,7 @@ export default function Welcome() {
         <span
           aria-hidden="true"
           data-label="Welcome"
-          className="hidden text-watermark font-bold text-very-light-grey before:content-[attr(data-label)] md:block"
+          className="pointer-events-none relative z-10 hidden text-watermark font-bold text-very-light-grey before:content-[attr(data-label)] md:block"
         />
         <div className="relative mt-17 md:-mt-10.25 lg:-mt-9.75 lg:grid lg:grid-cols-[190fr_445px_125fr_350px]">
           <h2 className="text-h2-sm font-bold text-very-dark-blue [--rise-shift:2.5rem] md:text-h2 lg:col-start-2">
